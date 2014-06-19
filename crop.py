@@ -42,6 +42,7 @@ class Crop:
         #increment days growing
         self._days_growing += 1
         #update status
+        
         self._update_status()
 
 def auto_grow(crop, days):
