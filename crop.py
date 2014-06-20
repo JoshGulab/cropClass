@@ -52,7 +52,7 @@ def auto_grow(crop, days):
         water = random.randint(1,10)
         crop.grow(light,water)
 
-def manual_grow(potato_crop):
+def manual_grow(crop):
     #get the light and water values form the user
     valid = False
     while not valid:
