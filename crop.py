@@ -16,7 +16,7 @@ class Crop:
     #method is a function that is attached to a class
     def needs(self):
         #return a dictionary containing the light and water needs
-        return{'light needs':self._light_need,"water need":self._water_need}
+        return{'light need':self._light_need,"water need":self._water_need}
     #method to report report the provide information about the current state of the 
     #crop
     def report(self):
@@ -56,6 +56,7 @@ def manual_grow(crop):
     #get the light and water values form the user
     valid = False
     while not valid:
+        
         try:
             light = int(input("Please enter a light value(1-10):"))
             if 1<= light <= 10:

@@ -5,50 +5,50 @@ class Animal:
 
     def __init__(self,growth_rate, food_need, water_need):
         self._weight = 0
-        self_days_growing = 0
+        self._days_growing = 0
         self._growth_rate = growth_rate
         self._food_need = food_need
         self._water_need = water_need
-        self._status = 0
+        self._status = "Just born"
         self._type = "Generic"
         self._name = "none"
 
     def needs(self):
-        return{'Food needs':self._food_need,'Water need':self._water_need}
+        return{'food need':self._food_need,'water need':self._water_need}
     
 
     def report(self):
-        return{'Type':self._type,'Status':self._status,'Growth rate':self._days_growing,'Days growing':self._days_growing,'Weight':self._weight}
+        return{'type':self._type,'status':self._status,'growth rate':self._days_growing,'days growing':self._days_growing,'weight':self._weight}
 
-    def update_status(self):
-        if self._growth > 15:
+    def _update_status(self):
+        if self._weight > 15:
             self._status = "Old"
-        elif self._growth >10:
+        elif self._weight >10:
             self._status = "Mature"
-        elif self._growth > 5:
+        elif self._weight > 5:
             self._status = "Young"
-        elif self._growth >0:
+        elif self._weight >0:
             self._status = "Baby"
-        elif self._growth == 0:
+        elif self._weight == 0:
             self._status = "Just born"
         
 
     def grow(self,food,water):
         if food >= self._food_need and water >= self._water_need:
-            self._growth += self._growth_rate
+            self._weight += self._growth_rate
         #increment days growing
         self._days_growing += 1
         #update status
         self._update_status()
 
-def auto_grow(animal,days):
+def auto_grow(animal, days):
     #grow the crop
     for day in range(days):
         food = random.randint(1,10)
         water = random.randint(1,10)
-        animal.grow(food,water)
+        animal.grow(food, water)
 
-def manual_grow(anmial):
+def manual_grow(animal):
     #get the light and water values form the user
     valid = False
     while not valid:

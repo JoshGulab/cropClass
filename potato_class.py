@@ -11,13 +11,13 @@ class Potato(Crop):
     def grow(self,light,water):
         if light >= self._light_need and water >= self._water_need:
             if self._status == "Seedling" and water > self._water_need:
-                self._growth += self._growth *1.5
+                self._growth += self._growth *1.3
             elif self._status == "Young" and water > self._water_need:
-                self._growth += self._growth_rate * 1.25
+                self._growth += self._growth_rate * 1.15
             else:
                 self._growth += self._growth_rate
         #increment days growing
-        self._days_growing =+ 1
+        self._days_growing += 1
         #update the status
         self._update_status()
                 
