@@ -97,7 +97,8 @@ def auto_grow(field,days):
     #grow automatically
     for day in range(days):
         light = random.randint(1,10)
-        water = random.randint(1,10)
+        water = random.ran
+        dint(1,10)
         food = random.randint(1,100)
         field.grow(light,food,water)
 
