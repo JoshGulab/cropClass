@@ -20,7 +20,7 @@ class RadioButtonWidget(QWidget):
         self.radio_button_list[0].setChecked(True)
 
         #create layout for radio buttons and add them
-        self.radio_button_layout = QBoxLayout()
+        self.radio_button_layout = QVBoxLayout()
 
         #add buttons t othe layout and button group
         counter = 1
