@@ -65,6 +65,8 @@ class MainWindow(QMainWindow):
 
     def switch_back(self):
         self.stacked_layout.setCurrentIndex(0)
+        self.text_box.setText(str(""))#set text_box back to nothing
+        
 
 
         
