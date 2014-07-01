@@ -59,6 +59,7 @@ class CropWindow(QMainWindow):
         self.status_grid = QGridLayout()
 
         #add label widgets to the status grid
+        
         self.status_grid.addWidget(self.growth_label,0,0)
         self.status_grid.addWidget(self.days_label,1,0)
         self.status_grid.addWidget(self.status_label,2,0)

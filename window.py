@@ -67,15 +67,6 @@ class MainWindow(QMainWindow):
         self.stacked_layout.setCurrentIndex(0)
         self.text_box.setText(str(""))#set text_box back to nothing
         
-
-
-        
-
-        
-
-            
-
-
 if __name__ == "__main__":
     application = QApplication(sys.argv)
     window = MainWindow()
