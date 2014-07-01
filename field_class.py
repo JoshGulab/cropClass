@@ -298,7 +298,7 @@ def manage_field(field):
         elif option == 3:
             add_animal_to_field(field)
         elif option == 4:
-            remove_animal = remove_animal_from_field(field)
+            removed_animal = remove_animal_from_field(field)
             print("You removed the animal {0}".format(removed_animal))
         elif option == 5:
             manual_grow(field)
