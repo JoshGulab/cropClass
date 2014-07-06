@@ -6,8 +6,8 @@ class FieldItemGraphicsPixmapItem(QGraphicsPixmapItem):
     #consrtuctor
     def __init__(self,graphics_list):
         super().__init__()
-        self.availabel_graphics = graphics_list
-        self.current_graphics = QPixmap(self.available_graphics[10])
+        self.available_graphics = graphics_list
+        self.current_graphic = QPixmap(self.available_graphics[10])
         self.setPixmap(self.current_graphic.scaledToWidth(25,1))
         self.setFlag(QGraphicsItem.ItemIsMoveable)#allows us to move graphics
 
