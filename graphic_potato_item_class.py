@@ -1,7 +1,7 @@
 from graphic_crop_item_class import *
 from potato_class import *
 
-import images
+#import field_resources
 
 class PotatoGraphicsPixmapItem(CropGraphicPixmapItem):
     """this class provides a graphical representation of a potato crop"""
