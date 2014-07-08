@@ -1,7 +1,7 @@
 from graphic_animal_item_class import *
 from cow_class import *
 
-#import field_resources
+import resources
 
 class CowGraphicsPixmapItem(AnimalGraphicsPixmapItem):
     """this class porvides a graphical representation of a cow"""

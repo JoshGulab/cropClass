@@ -6,7 +6,7 @@ from graphic_potato_item_class import *
 from graphic_cow_item_class import *
 from graphic_sheep_item_class import *
 
-#import field_resources
+import resources
 
 class FieldGraphicsScene(QGraphicsScene):
     """this class provides a scene to manage itens in the field"""
