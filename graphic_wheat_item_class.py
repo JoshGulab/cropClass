@@ -3,7 +3,7 @@ from wheat_class import *
 
 #import field_resources
 
-class WheatGraphicsPixmapItem(CropGraphicPixmapItem):
+class WheatGraphicsPixmapItem(CropGraphicsPixmapItem):
     """this class provides a graphical representation of a wheat crop"""
 
     #constructor
